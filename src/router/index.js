@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import NewsList from '@/components/News/NewsList'
 import NewsDetail from '@/components/News/NewsDetail'
-
+import ToDoList from '@/components/ToDo/ToDoList'
 Vue.use(Router)
 
 export default new Router({
@@ -22,6 +22,11 @@ export default new Router({
       path: '/NewsDetail',
       name: 'NewsDetail',
       component: NewsDetail
+    },
+    {
+      path: '/ToDoList',
+      name: 'ToDoList',
+      component: ToDoList
     }
   ]
 })
