@@ -1,6 +1,6 @@
 import axios from 'axios'
 import qs from 'qs'
-axios.defaults.baseURL = 'http://api01.vipgz1.idcfengye.com'
+axios.defaults.baseURL = 'http://localhost:5168'
 axios.headers = {'X-Requested-With': 'XMLHttpRequest', 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'}
 axios.defaults.paramsSerializer = (params) => {
   return qs.stringify(params, {arrayFormat: 'brackets'})
